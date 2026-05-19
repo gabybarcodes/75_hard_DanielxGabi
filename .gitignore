@@ -1,0 +1,4 @@
+# Tokens y archivos sensibles — NUNCA subir a GitHub
+github_token.txt
+*.txt
+.DS_Store
