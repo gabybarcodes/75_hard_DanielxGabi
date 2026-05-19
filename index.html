@@ -173,6 +173,54 @@ header h1 { font-size: 2rem; font-weight: 900; letter-spacing: -0.5px; margin-bo
 .pct-g2 { color: var(--gaby); }
 .strike-s { display: inline-block; background: var(--red); color: #fff; font-size: 9px; border-radius: 3px; padding: 0 3px; margin-right: 2px; }
 
+/* SYNC */
+.sync-card { padding: 22px 24px; margin-bottom: 20px; }
+.sync-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+.sync-desc { font-size: 13px; color: var(--muted); margin-bottom: 16px; line-height: 1.6; }
+.token-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+.token-inp {
+  flex: 1; min-width: 200px; background: var(--card2); border: 1px solid var(--border);
+  color: var(--text); border-radius: 8px; padding: 8px 12px; font-size: 13px; font-family: monospace;
+}
+.token-inp:focus { outline: none; border-color: var(--daniel); }
+.sync-btn {
+  background: var(--card2); border: 1px solid var(--border); color: var(--text);
+  border-radius: 8px; padding: 8px 14px; font-size: 13px; cursor: pointer; white-space: nowrap;
+  transition: border-color .15s;
+}
+.sync-btn:hover { border-color: var(--daniel); }
+.sync-btn:disabled { opacity: .4; cursor: not-allowed; }
+.sync-btn.primary { background: var(--daniel); border-color: var(--daniel); color: #fff; font-weight: 600; }
+.sync-btn.primary:hover { opacity: .85; }
+.sync-btn.danger { border-color: var(--red); color: var(--red); background: transparent; }
+.sync-btns { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.sync-status {
+  font-size: 12px; padding: 7px 12px; background: var(--card2); border-radius: 7px;
+  margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
+}
+.sync-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); flex-shrink: 0; }
+.sync-dot.ok { background: var(--green); }
+.sync-dot.err { background: var(--red); }
+.sync-dot.spin { background: var(--gold); animation: pulse .8s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+.history-wrap { margin-top: 14px; }
+.history-title { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+.history-item {
+  display: flex; align-items: center; gap: 10px; padding: 8px 10px;
+  border-radius: 7px; font-size: 12px; margin-bottom: 3px; cursor: default;
+}
+.history-item:hover { background: var(--card2); }
+.history-date { color: var(--muted); flex-shrink: 0; width: 120px; }
+.history-msg { flex: 1; color: var(--text); }
+.history-restore {
+  font-size: 11px; padding: 3px 9px; border-radius: 5px;
+  border: 1px solid var(--border); background: none; color: var(--muted); cursor: pointer;
+}
+.history-restore:hover { border-color: var(--daniel); color: var(--daniel); }
+.token-hint { font-size: 11px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
+.token-hint a { color: var(--daniel); }
+.divider { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+
 /* CHART */
 .chart-card { padding: 20px 22px; margin-bottom: 20px; }
 .chart-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
@@ -295,22 +343,53 @@ header h1 { font-size: 2rem; font-weight: 900; letter-spacing: -0.5px; margin-bo
   </div>
 
   <!-- SYNC -->
-  <div class="card" style="padding:18px 22px;margin-bottom:20px;">
-    <div class="section-title" style="margin-bottom:10px;">Sincronizar datos</div>
-    <p style="font-size:13px;color:var(--muted);margin-bottom:12px;">
-      Exporta los datos para compartirlos con tu compañero/a · Los datos se guardan en este navegador
+  <div class="card sync-card">
+    <h3>☁ Backup & Sincronización — GitHub</h3>
+    <p class="sync-desc">
+      Cada backup guarda <code>data.json</code> en el repositorio con un commit — tienes historial completo y puedes restaurar cualquier día anterior.<br>
+      Necesitas un <strong>Personal Access Token</strong> con permiso <code>Contents: Read & Write</code> en este repo.
     </p>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;">
-      <button onclick="exportData()" style="background:var(--card2);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:8px 16px;font-size:13px;cursor:pointer;">
-        ⬇ Exportar datos
-      </button>
-      <label style="background:var(--card2);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:8px 16px;font-size:13px;cursor:pointer;">
-        ⬆ Importar datos
-        <input type="file" accept=".json" onchange="importData(this)" style="display:none">
-      </label>
-      <button onclick="resetData()" style="background:transparent;border:1px solid var(--red);color:var(--red);border-radius:8px;padding:8px 16px;font-size:13px;cursor:pointer;margin-left:auto;">
-        Borrar todo
-      </button>
+
+    <!-- Token setup -->
+    <div id="tokenSetup">
+      <div class="token-row">
+        <input class="token-inp" type="password" id="ghTokenInp" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" autocomplete="off">
+        <button class="sync-btn primary" onclick="saveToken()">Guardar token</button>
+      </div>
+      <p class="token-hint">
+        Crea uno en <a href="https://github.com/settings/tokens" target="_blank">github.com/settings/tokens</a> →
+        Fine-grained token → solo este repo → <em>Contents: Read and Write</em>
+      </p>
+    </div>
+
+    <!-- Actions (visible once token is saved) -->
+    <div id="syncActions" style="display:none">
+      <div class="sync-status" id="syncStatus">
+        <span class="sync-dot" id="syncDot"></span>
+        <span id="syncMsg">Listo</span>
+      </div>
+      <div class="sync-btns">
+        <button class="sync-btn primary" id="btnPush" onclick="pushToGitHub()">☁ Guardar en GitHub</button>
+        <button class="sync-btn" id="btnPull" onclick="pullFromGitHub()">⬇ Cargar de GitHub</button>
+        <button class="sync-btn" onclick="toggleHistory()">🕐 Historial</button>
+      </div>
+
+      <div class="history-wrap" id="historyWrap" style="display:none">
+        <div class="history-title">Últimos backups</div>
+        <div id="historyList"><span style="color:var(--muted);font-size:12px">Cargando…</span></div>
+      </div>
+
+      <hr class="divider">
+      <div class="sync-btns">
+        <button class="sync-btn" onclick="exportData()">⬇ Exportar JSON</button>
+        <label class="sync-btn" style="cursor:pointer">
+          ⬆ Importar JSON
+          <input type="file" accept=".json" onchange="importData(this)" style="display:none">
+        </label>
+        <button class="sync-btn" onclick="downloadWebsite()">⬇ Backup HTML</button>
+        <button class="sync-btn danger" onclick="resetData()" style="margin-left:auto">Borrar todo</button>
+        <button class="sync-btn" style="font-size:11px;color:var(--muted)" onclick="clearToken()">Cambiar token</button>
+      </div>
     </div>
   </div>
 
@@ -686,6 +765,7 @@ function toggleWeek(hdr) {
   hdr.querySelector('.wk-arrow').classList.toggle('open');
 }
 
+// ── LOCAL EXPORT / IMPORT ──────────────────────────────────────────
 function exportData() {
   const json = JSON.stringify(data, null, 2);
   const blob = new Blob([json], {type:'application/json'});
@@ -704,17 +784,177 @@ function importData(input) {
       if (!imported.d || !imported.g) throw new Error('Formato incorrecto');
       if (!confirm('¿Reemplazar todos los datos actuales con los del archivo importado?')) return;
       data = imported; save(); render();
-      alert('Datos importados correctamente.');
+      setSyncMsg('ok', 'Datos importados correctamente');
     } catch(err) { alert('Error al importar: ' + err.message); }
   };
   reader.readAsText(file);
   input.value = '';
 }
 
+function downloadWebsite() {
+  const html = document.documentElement.outerHTML;
+  const blob = new Blob([html], {type:'text/html'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `75hard_backup_${new Date().toISOString().slice(0,10)}.html`;
+  a.click();
+}
+
 function resetData() {
   if (!confirm('¿Borrar TODOS los datos del reto? Esta acción no se puede deshacer.')) return;
   data = {d:{}, g:{}}; save(); render();
 }
+
+// ── GITHUB BACKUP ──────────────────────────────────────────────────
+const GH_OWNER = 'gabybarcodes';
+const GH_REPO  = '75_hard_DanielxGabi';
+const GH_FILE  = 'data.json';
+const GH_API   = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`;
+const TOKEN_KEY = '75hard_ghtoken';
+
+function getToken() { return localStorage.getItem(TOKEN_KEY); }
+
+function saveToken() {
+  const val = document.getElementById('ghTokenInp').value.trim();
+  if (!val) { alert('Introduce el token'); return; }
+  localStorage.setItem(TOKEN_KEY, val);
+  initSyncUI();
+}
+
+function clearToken() {
+  if (!confirm('¿Eliminar el token guardado?')) return;
+  localStorage.removeItem(TOKEN_KEY);
+  initSyncUI();
+}
+
+function initSyncUI() {
+  const token = getToken();
+  document.getElementById('tokenSetup').style.display  = token ? 'none'  : 'block';
+  document.getElementById('syncActions').style.display = token ? 'block' : 'none';
+  if (token) {
+    const last = localStorage.getItem('75hard_lastsync');
+    setSyncMsg('ok', last ? `Último backup: ${last}` : 'Token listo · aún no has hecho backup');
+  }
+}
+
+function setSyncMsg(state, msg) {
+  const dot = document.getElementById('syncDot');
+  const txt = document.getElementById('syncMsg');
+  if (!dot || !txt) return;
+  dot.className = 'sync-dot ' + (state==='spin'?'spin':state==='ok'?'ok':state==='err'?'err':'');
+  txt.textContent = msg;
+}
+
+function setBtns(disabled) {
+  ['btnPush','btnPull'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.disabled = disabled;
+  });
+}
+
+async function ghHeaders() {
+  return {
+    'Authorization': `token ${getToken()}`,
+    'Accept': 'application/vnd.github.v3+json',
+    'Content-Type': 'application/json'
+  };
+}
+
+async function pushToGitHub() {
+  const token = getToken(); if (!token) return;
+  setSyncMsg('spin', 'Guardando en GitHub…'); setBtns(true);
+  try {
+    // get current SHA if file exists
+    let sha = null;
+    const check = await fetch(GH_API, { headers: await ghHeaders() });
+    if (check.ok) { sha = (await check.json()).sha; }
+
+    const now = new Date();
+    const label = now.toISOString().slice(0,16).replace('T',' ');
+    const body = {
+      message: `Backup ${label} — Día ${Math.max(dayNum(),0)}`,
+      content: btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2)))),
+      ...(sha ? { sha } : {})
+    };
+    const res = await fetch(GH_API, { method:'PUT', headers: await ghHeaders(), body: JSON.stringify(body) });
+    if (!res.ok) { const e = await res.json(); throw new Error(e.message || res.status); }
+
+    localStorage.setItem('75hard_lastsync', label);
+    setSyncMsg('ok', `Guardado · ${label}`);
+    if (document.getElementById('historyWrap').style.display !== 'none') await loadHistory();
+  } catch(err) {
+    setSyncMsg('err', `Error: ${err.message}`);
+  } finally { setBtns(false); }
+}
+
+async function pullFromGitHub() {
+  const token = getToken(); if (!token) return;
+  if (!confirm('¿Reemplazar los datos locales con el último backup de GitHub?')) return;
+  setSyncMsg('spin', 'Cargando desde GitHub…'); setBtns(true);
+  try {
+    const res = await fetch(GH_API, { headers: await ghHeaders() });
+    if (!res.ok) throw new Error('No se encontró data.json en el repositorio');
+    const file = await res.json();
+    const imported = JSON.parse(decodeURIComponent(escape(atob(file.content))));
+    if (!imported.d || !imported.g) throw new Error('Formato incorrecto');
+    data = imported; save(); render();
+    setSyncMsg('ok', 'Datos cargados desde GitHub ✓');
+  } catch(err) {
+    setSyncMsg('err', `Error: ${err.message}`);
+  } finally { setBtns(false); }
+}
+
+let historyVisible = false;
+async function toggleHistory() {
+  const wrap = document.getElementById('historyWrap');
+  historyVisible = !historyVisible;
+  wrap.style.display = historyVisible ? 'block' : 'none';
+  if (historyVisible) await loadHistory();
+}
+
+async function loadHistory() {
+  const listEl = document.getElementById('historyList');
+  listEl.innerHTML = '<span style="color:var(--muted);font-size:12px">Cargando…</span>';
+  try {
+    const res = await fetch(
+      `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/commits?path=${GH_FILE}&per_page=15`,
+      { headers: await ghHeaders() }
+    );
+    if (!res.ok) throw new Error(res.status);
+    const commits = await res.json();
+    if (!commits.length) { listEl.innerHTML = '<span style="color:var(--muted);font-size:12px">Sin backups todavía</span>'; return; }
+    listEl.innerHTML = commits.map(c => {
+      const date = new Date(c.commit.author.date).toLocaleString('es-ES',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});
+      const msg  = c.commit.message;
+      const sha  = c.sha;
+      return `<div class="history-item">
+        <span class="history-date">${date}</span>
+        <span class="history-msg">${msg}</span>
+        <button class="history-restore" onclick="restoreFromCommit('${sha}','${date}')">Restaurar</button>
+      </div>`;
+    }).join('');
+  } catch(err) {
+    listEl.innerHTML = `<span style="color:var(--red);font-size:12px">Error: ${err.message}</span>`;
+  }
+}
+
+async function restoreFromCommit(sha, label) {
+  if (!confirm(`¿Restaurar los datos del backup del ${label}? Se sobreescribirán los datos actuales.`)) return;
+  setSyncMsg('spin', 'Restaurando…'); setBtns(true);
+  try {
+    const res = await fetch(`${GH_API}?ref=${sha}`, { headers: await ghHeaders() });
+    if (!res.ok) throw new Error('No se pudo obtener ese commit');
+    const file = await res.json();
+    const imported = JSON.parse(decodeURIComponent(escape(atob(file.content))));
+    if (!imported.d || !imported.g) throw new Error('Formato incorrecto');
+    data = imported; save(); render();
+    setSyncMsg('ok', `Restaurado desde ${label} ✓`);
+  } catch(err) {
+    setSyncMsg('err', `Error: ${err.message}`);
+  } finally { setBtns(false); }
+}
+
+initSyncUI();
 
 render();
 </script>
