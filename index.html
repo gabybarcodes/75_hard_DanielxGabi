@@ -2,7 +2,13 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d0d14">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="75 HARD">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%230d0d14' width='192' height='192'/><text x='96' y='130' font-size='120' font-weight='900' text-anchor='middle' fill='%23f06b9e' font-family='system-ui'>🔥</text></svg>">
 <title>75 HARD — Daniel & Gabi</title>
 <style>
 :root {
@@ -174,7 +180,7 @@ header h1 { font-size: 2rem; font-weight: 900; letter-spacing: -0.5px; margin-bo
 .strike-s { display: inline-block; background: var(--red); color: #fff; font-size: 9px; border-radius: 3px; padding: 0 3px; margin-right: 2px; }
 
 /* SYNC */
-.sync-card { padding: 22px 24px; margin-bottom: 20px; }
+.sync-card { padding: 22px 24px; margin-bottom: 20px; border: 2px solid var(--border); background: linear-gradient(135deg, rgba(91,156,246,.05) 0%, rgba(240,107,158,.05) 100%); }
 .sync-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
 .sync-desc { font-size: 13px; color: var(--muted); margin-bottom: 16px; line-height: 1.6; }
 .token-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
@@ -206,17 +212,20 @@ header h1 { font-size: 2rem; font-weight: 900; letter-spacing: -0.5px; margin-bo
 .history-wrap { margin-top: 14px; }
 .history-title { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
 .history-item {
-  display: flex; align-items: center; gap: 10px; padding: 8px 10px;
-  border-radius: 7px; font-size: 12px; margin-bottom: 3px; cursor: default;
+  display: flex; align-items: center; gap: 10px; padding: 10px 12px;
+  border-radius: 7px; font-size: 12px; margin-bottom: 6px; cursor: default;
+  border: 1px solid rgba(255,255,255,.05); background: rgba(255,255,255,.01);
+  transition: all .15s;
 }
-.history-item:hover { background: var(--card2); }
-.history-date { color: var(--muted); flex-shrink: 0; width: 120px; }
-.history-msg { flex: 1; color: var(--text); }
+.history-item:hover { background: var(--card2); border-color: var(--border); }
+.history-date { color: var(--daniel); flex-shrink: 0; width: 130px; font-weight: 600; }
+.history-msg { flex: 1; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .history-restore {
-  font-size: 11px; padding: 3px 9px; border-radius: 5px;
-  border: 1px solid var(--border); background: none; color: var(--muted); cursor: pointer;
+  font-size: 11px; padding: 5px 11px; border-radius: 5px;
+  border: 1px solid var(--daniel); background: rgba(91,156,246,.1); color: var(--daniel); cursor: pointer;
+  font-weight: 600; transition: all .12s;
 }
-.history-restore:hover { border-color: var(--daniel); color: var(--daniel); }
+.history-restore:hover { background: var(--daniel); color: #fff; }
 .token-hint { font-size: 11px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
 .token-hint a { color: var(--daniel); }
 .divider { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
@@ -357,7 +366,8 @@ header h1 { font-size: 2rem; font-weight: 900; letter-spacing: -0.5px; margin-bo
         <button class="sync-btn primary" onclick="saveToken()">Guardar token</button>
       </div>
       <p class="token-hint">
-        Crea uno en <a href="https://github.com/settings/tokens" target="_blank">github.com/settings/tokens</a> →
+        ✏️ Copia el token de <code>github_token.txt</code> y pégalo arriba<br>
+        O crea uno nuevo en <a href="https://github.com/settings/tokens" target="_blank">github.com/settings/tokens</a> →
         Fine-grained token → solo este repo → <em>Contents: Read and Write</em>
       </p>
     </div>
@@ -369,9 +379,12 @@ header h1 { font-size: 2rem; font-weight: 900; letter-spacing: -0.5px; margin-bo
         <span id="syncMsg">Listo</span>
       </div>
       <div class="sync-btns">
-        <button class="sync-btn primary" id="btnPush" onclick="pushToGitHub()">☁ Guardar en GitHub</button>
-        <button class="sync-btn" id="btnPull" onclick="pullFromGitHub()">⬇ Cargar de GitHub</button>
-        <button class="sync-btn" onclick="toggleHistory()">🕐 Historial</button>
+        <button class="sync-btn primary" id="btnPush" onclick="pushToGitHub()" style="flex:1;font-size:16px;padding:12px;font-weight:600">☁ Guardar en GitHub</button>
+        <button class="sync-btn" id="btnPull" onclick="pullFromGitHub()" style="flex:0.7;font-size:14px;padding:10px">⬇ Cargar</button>
+      </div>
+      <p style="font-size:12px;color:var(--muted);margin:8px 0 0;text-align:center">✓ Auto-backup cada cambio (30 seg después)</p>
+      <div class="sync-btns">
+        <button class="sync-btn" onclick="toggleHistory()" style="flex:1">🕐 Historial de backups</button>
       </div>
 
       <div class="history-wrap" id="historyWrap" style="display:none">
@@ -395,7 +408,7 @@ header h1 { font-size: 2rem; font-weight: 900; letter-spacing: -0.5px; margin-bo
 </div>
 
 <script>
-const START = new Date('2026-05-20T00:00:00');
+const START = new Date('2026-05-25T00:00:00');
 const DAYS = 75;
 const KEY = '75hard_v2';
 
@@ -435,7 +448,21 @@ function pStr(v) { return (v*100).toFixed(1).replace('.',',')+'%'; }
 function pCls(v) { return v>=1?'perfect':v>=0.5?'good':'bad'; }
 
 let data = (() => { try { return JSON.parse(localStorage.getItem(KEY))||{d:{},g:{}}; } catch(e){ return {d:{},g:{}}; }})();
-function save() { localStorage.setItem(KEY, JSON.stringify(data)); }
+
+let autoSyncTimer = null;
+let lastAutoSync = 0;
+
+function save() { 
+  localStorage.setItem(KEY, JSON.stringify(data));
+  
+  // Auto-backup to GitHub (with debounce to avoid too many API calls)
+  if (getToken() && Date.now() - lastAutoSync > 30000) { // At least 30 seconds between auto-syncs
+    lastAutoSync = Date.now();
+    autoSyncTimer = setTimeout(() => {
+      pushToGitHub().catch(err => console.log('Auto-sync failed:', err));
+    }, 1000); // Wait 1 second after last change before syncing
+  }
+}
 
 function dDay(person, n) {
   if (!data[person][n]) {
@@ -482,10 +509,10 @@ function render() {
 
   document.getElementById('progFill').style.width = pct+'%';
   if (cur<1) {
-    document.getElementById('hSub').textContent = 'Empieza el 20 de mayo de 2026 · ¡Ya falta poco! 💪';
+    document.getElementById('hSub').textContent = 'Empieza el 25 de mayo de 2026 · ¡Ya falta poco! 💪';
     document.getElementById('progLabel').textContent = '0 / 75 días · El reto comienza mañana';
   } else if (cur>DAYS) {
-    document.getElementById('hSub').textContent = '¡RETO COMPLETADO! 🏆 20 may – 2 ago 2026';
+    document.getElementById('hSub').textContent = '¡RETO COMPLETADO! 🏆 25 may – 8 ago 2026';
     document.getElementById('progLabel').textContent = '75 / 75 días · ¡Lo lograron!';
   } else {
     document.getElementById('hSub').textContent = `Día ${cur} de 75 · ${DAYS-cur} días restantes · Inicio: 20 may 2026`;
@@ -832,7 +859,7 @@ function initSyncUI() {
   document.getElementById('syncActions').style.display = token ? 'block' : 'none';
   if (token) {
     const last = localStorage.getItem('75hard_lastsync');
-    setSyncMsg('ok', last ? `Último backup: ${last}` : 'Token listo · aún no has hecho backup');
+    setSyncMsg('ok', last ? `✓ Último backup: ${last}` : '✓ Token listo · listo para primer backup');
   }
 }
 
@@ -956,6 +983,22 @@ async function restoreFromCommit(sha, label) {
 initSyncUI();
 
 render();
+
+// Register service worker for PWA (only on http/https, not file://)
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  navigator.serviceWorker.register('service-worker.js')
+    .then(reg => console.log('Service Worker registered'))
+    .catch(err => console.log('Service Worker not available:', err));
+}
+
+// Clear service worker cache if on file:// protocol
+if ('caches' in window && location.protocol === 'file:') {
+  caches.keys().then(names => {
+    names.forEach(name => {
+      caches.delete(name).catch(() => {});
+    });
+  }).catch(() => {});
+}
 </script>
 </body>
 </html>
