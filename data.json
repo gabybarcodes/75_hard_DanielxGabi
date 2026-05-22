@@ -1,156 +1,1131 @@
 {
   "d": {
-    "1": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "2": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "3": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "4": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "5": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "6": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "7": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "8": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "9": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "10": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "11": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "12": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "13": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "14": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "15": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "16": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "17": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "18": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "19": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "20": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "21": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "22": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "23": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "24": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "25": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "26": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "27": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "28": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "29": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "30": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "31": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "32": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "33": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "34": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "35": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "36": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "37": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "38": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "39": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "40": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "41": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "42": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "43": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "44": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "45": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "46": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "47": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "48": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "49": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "50": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "51": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "52": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "53": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "54": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "55": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "56": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "57": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "58": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "59": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "60": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "61": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "62": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "63": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "64": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "65": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "66": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "67": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "68": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "69": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "70": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "71": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "72": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "73": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "74": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false},
-    "75": {"cardio":false,"gym":false,"descanso":false,"azucar":false,"rrss":false}
+    "1": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "2": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "3": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "4": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "5": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "6": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "7": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "8": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "9": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "10": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "11": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "12": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "13": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "14": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "15": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "16": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "17": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "18": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "19": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "20": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "21": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "22": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "23": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "24": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "25": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "26": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "27": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "28": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "29": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "30": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "31": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "32": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "33": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "34": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "35": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "36": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "37": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "38": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "39": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "40": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "41": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "42": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "43": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "44": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "45": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "46": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "47": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "48": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "49": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "50": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "51": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "52": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "53": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "54": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "55": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "56": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "57": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "58": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "59": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "60": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "61": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "62": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "63": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "64": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "65": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "66": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "67": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "68": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "69": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "70": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "71": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "72": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "73": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "74": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    },
+    "75": {
+      "cardio": false,
+      "gym": false,
+      "descanso": false,
+      "azucar": false,
+      "rrss": false
+    }
   },
   "g": {
-    "1": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "2": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "3": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "4": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "5": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "6": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "7": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "8": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "9": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "10": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "11": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "12": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "13": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "14": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "15": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "16": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "17": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "18": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "19": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "20": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "21": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "22": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "23": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "24": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "25": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "26": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "27": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "28": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "29": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "30": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "31": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "32": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "33": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "34": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "35": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "36": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "37": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "38": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "39": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "40": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "41": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "42": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "43": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "44": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "45": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "46": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "47": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "48": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "49": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "50": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "51": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "52": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "53": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "54": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "55": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "56": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "57": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "58": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "59": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "60": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "61": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "62": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "63": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "64": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "65": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "66": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "67": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "68": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "69": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "70": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "71": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "72": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "73": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "74": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false},
-    "75": {"leer":false,"workout":false,"azucar":false,"descanso":false,"keinmusik":false,"rrss":false}
+    "1": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "2": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "3": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "4": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "5": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "6": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "7": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "8": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "9": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "10": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "11": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "12": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "13": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "14": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "15": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "16": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "17": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "18": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "19": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "20": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "21": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "22": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "23": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "24": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "25": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "26": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "27": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "28": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "29": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "30": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "31": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "32": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "33": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "34": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "35": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "36": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "37": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "38": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "39": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "40": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "41": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "42": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "43": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "44": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "45": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "46": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "47": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "48": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "49": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "50": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "51": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "52": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "53": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "54": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "55": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "56": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "57": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "58": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "59": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "60": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "61": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "62": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "63": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "64": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "65": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "66": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "67": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "68": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "69": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "70": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "71": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "72": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "73": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "74": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    },
+    "75": {
+      "leer": false,
+      "workout": false,
+      "azucar": false,
+      "descanso": false,
+      "keinmusik": false,
+      "rrss": false
+    }
   }
 }
