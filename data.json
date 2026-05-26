@@ -536,12 +536,12 @@
       "rrss": true
     },
     "2": {
-      "leer": false,
-      "workout": false,
-      "azucar": false,
+      "leer": true,
+      "workout": true,
+      "azucar": true,
       "descanso": false,
-      "keinmusik": false,
-      "rrss": false
+      "keinmusik": true,
+      "rrss": true
     },
     "3": {
       "leer": false,
