@@ -3,7 +3,7 @@
     "1": {
       "cardio": false,
       "gym": false,
-      "descanso": true,
+      "descanso": false,
       "azucar": false,
       "rrss": false
     },
@@ -536,7 +536,7 @@
       "rrss": true
     },
     "2": {
-      "leer": true,
+      "leer": false,
       "workout": true,
       "azucar": true,
       "descanso": false,
@@ -544,7 +544,7 @@
       "rrss": true
     },
     "3": {
-      "leer": false,
+      "leer": true,
       "workout": false,
       "azucar": false,
       "descanso": false,
